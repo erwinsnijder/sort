@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+        <head >
+        <title>sorteren</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script>
+var names = [' Kees',' Willem',' Bianca',' Rik',' Michelle',' Floris',' Mike',' Diem'];
+function klik2() {
+  names.sort();
+  document.getElementById("sorted").innerHTML = names;
+}
+</script>
+    <style>
+        .column {
+  float: left;
+  width: 33%;
+  padding: 10px;
+  height: 600px;
+  text-align: center;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    </style>
+</head>
+<body>
+        <div class="row">
+                <div class="column" style="background-color:#ccc;">
+                           <p id="unsorted"></p>
+                </div>
+                <div class="column" style="background-color:#fff;">
+                    <button onclick="klik2()">sorteer</button>
+                </div>
+                <div class="column" style="background-color:#ccc;">
+                        <p id="sorted"></p>
+                      </div>
+              </div>
+        <script>
+        document.getElementById("unsorted").innerHTML = names.toString();
+        </script>
+</body>
+</html>
