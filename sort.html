@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script>
-var names = [' Kees',' Willem',' Bianca',' Rik',' Michelle',' Floris',' Mike',' Diem'];
+var names = [' Kees',' Willem',' Bianca',' Rik',' Michelle',' Floris',' Mike',' Diem', 'Koos', 'Tamara', 'Albert'];
 function klik() {
   names.sort();
   document.getElementById("sorted").innerHTML = names;
@@ -34,17 +34,17 @@ html,body
 <body>
         <div class="row">
                 <div class="column card" style="background-color:#eee;">
-                           <p id="unsorted"></p>
+                  <p id="unsorted"></p>
                 </div>
                 <div class="column">
-                    <button class="button" type="submit" onclick="klik()">sorteer</button>
+                  <button class="button" type="submit" onclick="klik()">sorteer</button>
                 </div>
                 <div class="column card" style="background-color:#eee">
-                        <p id="sorted"></p>
+                  <p id="sorted"></p>
                 </div>
         </div>
-        <script>
-        document.getElementById("unsorted").innerHTML = names.toString();
-        </script>
+    <script>
+      document.getElementById("unsorted").innerHTML = names.toString();
+    </script>
 </body>
 </html>
