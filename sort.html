@@ -13,32 +13,37 @@ function klik2() {
 }
 </script>
     <style>
-        .column {
+html,body
+{   
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+}
+.column
+ {
   float: left;
-  width: 33%;
-  padding: 10px;
-  height: 600px;
+  width: 33.33%;
+  height: 100%;
+  
+  height: 200px;
   text-align: center;
 }
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
     </style>
 </head>
 <body>
+  <br>
         <div class="row">
-                <div class="column" style="background-color:#ccc;">
+                <div class="column card" style="background-color:#ddd;">
                            <p id="unsorted"></p>
                 </div>
-                <div class="column" style="background-color:#fff;">
+                <div class="column">
                     <button onclick="klik2()">sorteer</button>
                 </div>
-                <div class="column" style="background-color:#ccc;">
+                <div class="column card" style="background-color:rgb(0, 153, 255);">
                         <p id="sorted"></p>
-                      </div>
-              </div>
+                </div>
+        </div>
         <script>
         document.getElementById("unsorted").innerHTML = names.toString();
         </script>
