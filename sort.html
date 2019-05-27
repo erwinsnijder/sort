@@ -7,7 +7,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script>
 var names = [' Kees',' Willem',' Bianca',' Rik',' Michelle',' Floris',' Mike',' Diem'];
-function klik2() {
+function klik() {
   names.sort();
   document.getElementById("sorted").innerHTML = names;
 }
@@ -37,7 +37,7 @@ html,body
                            <p id="unsorted"></p>
                 </div>
                 <div class="column">
-                    <button class="button" type="submit" onclick="klik2()">sorteer</button>
+                    <button class="button" type="submit" onclick="klik()">sorteer</button>
                 </div>
                 <div class="column card" style="background-color:#eee">
                         <p id="sorted"></p>
