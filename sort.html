@@ -21,28 +21,45 @@ html,body
 }
 .row{
   height: 100%;
-}
+ }
 .column
  {
   float: left;
   width: 33.33%;
   height: 100%;
   text-align: center;
+ }
+ .header
+ {
+  text-align: center;
+  padding: 30px;
+  font-size: larger; 
+ }
+ footer
+ {
+  padding: 30px;
+  text-align: center;   
 }
 </style>
 </head>
 <body>
+  <div class="header hero is-primary">
+<h1>Sortering</h1>
+  </div>
         <div class="row">
                 <div class="column card" style="background-color:#eee;">
                   <p id="unsorted"></p>
                 </div>
-                <div class="column">
+                <div class="column card">
                   <button class="button" type="submit" onclick="klik()">sorteer</button>
                 </div>
                 <div class="column card" style="background-color:#eee">
                   <p id="sorted"></p>
                 </div>
         </div>
+        <footer class="hero is-primary">
+         <p>bla bla footer</p>
+        </footer>
     <script>
       document.getElementById("unsorted").innerHTML = names.toString();
     </script>
